@@ -1,0 +1,523 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;  
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: 'FuturaLT-Light';
+    src: url('./font/FuturaLT-Light.woff') format('woff');
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#since{
+    display: flex;
+}
+
+#logo-slogan{
+    padding-top: 274px;
+    padding-left: 500px;
+    font-size: 50px;
+    animation: blink 4s infinite ease;
+}
+
+@keyframes blink{
+    10% {
+        color: white;
+    }
+
+    25%{
+        color: antiquewhite;
+    }
+    50%{
+        color: aqua;
+    }
+    75%{
+        color: red;
+    }
+    100%{
+        color:cornflowerblue;
+    }
+}
+
+.booking{
+    width: 100%;
+    height: 100vh;
+}
+
+#party{
+    width: 100%;
+    height: 500px;
+    background-image: url('./images/party.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+#order{
+    width: 100%;
+    height: 800px;
+    background-image: url('./images/online-food-ordering.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.order-container{
+    background-color: #EEC616;
+    margin: 490px 0px 0px 0px;
+    padding: 50px 0px 0px 400px;
+}
+
+.event h2{
+    text-align: center;
+    color:darkorange;
+    
+}
+
+.order-container button{
+    padding: 10px 10px;
+    background-color: #3B396C;
+    color: #fff;
+}
+
+.order-container button:hover{
+    background-color: rgb(41, 39, 75);
+}
+
+#party h1{
+    text-align: center;
+    color: orange;
+    font-size: 4.5rem;
+    padding: 200px 0px 0px 0px;
+}
+
+.form-container{
+    background-color: #EEC616;
+    margin: 136px 0px 0px 0px;
+    padding: 50px 0px 0px 400px;
+}
+
+.form-group{
+    margin: 20px 10px;
+}
+
+input, select{
+    padding: 6px 10px;
+}
+
+.form-container button{
+    padding: 10px 10px;
+    background-color: #3B396C;
+    color: #fff;
+}
+
+.form-container button:hover{
+    background-color: rgb(41, 39, 75);
+}
+
+.inquire{
+    padding: 10px 0px 64px 350px;
+}
+
+.heading{
+    background-color: orange;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.hour-container{
+    height: 90%;
+    max-width: 700px;
+    width: 90%;
+    background-color: #e9e9e2;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.heading img{
+    margin: 20px 10px;
+}
+
+.linkitem{
+    display: inline-block; 
+    list-style: none; 
+    margin: 10px 20px;
+}
+
+.links{
+    text-decoration: none;
+    font-weight: bold;
+    color: palegoldenrod;
+    font-family: 'FuturaLT-Light';
+}
+
+.links:hover{
+    color:rebeccapurple;
+}
+
+.shop{
+   background-color: rgb(180, 222, 216); 
+   color: rgb(29, 86, 96);
+   padding: 10px 15px;
+   border-radius: 5px;
+   margin: 0px 12px 0px 0px;
+   border: 1px solid rebeccapurple;
+   font-family: 'FuturaLT-Light';
+   text-decoration: none;
+}
+
+.shop:hover{
+    background-color: rebeccapurple;
+    color: orange;
+}
+
+header{
+    height: 600px;
+    background-image: url('./images/restaurant-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    /* background-attachment: fixed;  */
+}
+
+#about{
+    color: rgb(196, 111, 72);
+    font-size:20px;
+    padding: 20px;
+    background-color: rgb(248, 195, 170);
+    text-align: center;
+}
+
+#about img{
+    width: 18%;
+    max-width: 100%;
+    height: 250px;
+    float: right;
+    margin-top: -20px;
+}
+
+#about p{
+    padding: 10px;
+    width: 50%;
+    text-align: justify;
+    font-family: 'FuturaLT-Light';
+    margin: 0 auto;
+}
+
+#about h2{
+    text-align: center;
+    color:darkorange;
+    padding: 20px 0px;
+}
+
+.event{
+    color: rgb(200, 148, 51);
+    font-size:20px;
+    padding: 20px;
+    background-color: rgb(248, 195, 170);
+    text-align: center;
+    margin: -620px 0px;
+}
+
+
+#menus{
+    background-color: #EEC616;
+    margin: 620px 0px;
+}
+
+#menus h2{
+    text-align: center;
+    color: #1D5600;
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-list h3{
+    text-align: center;
+}
+
+#hours{
+    background-color: #EEC616;
+}
+
+#hours img{
+    height: 630px;
+    width: 64%;
+    background-image: url('./images/time.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: block;
+    float: right;
+}
+
+.hour-container h2{
+    font: 'Dancing Script';
+    font-weight: 400;
+    color: #1d5660;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 50px;
+}
+
+.hour-container p {
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'FuturaLT-Light';
+}
+
+.hour-container a{
+    text-decoration: none;
+    font-family: 'FuturaLT-Light';
+}
+
+.menu-img{
+    margin: 80px 20px 0px 0px;
+}
+
+.party-container{
+    margin: 50px auto;
+    max-width: 800px;
+    min-height: 400px;
+    background-color: #e9e9e2;
+}
+
+.party-container h2{
+    padding: 20px 0px;
+    color: #1D5600;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'Dancing Script';
+}
+
+.party-container p{
+    text-align: center;
+    color: #1D5600;
+    padding-bottom: 20px;
+    font-family: 'FuturaLT-Light';
+}
+
+.party-container a{
+    background-color: #f5f3ec;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #1C2C59;
+    color: #1C2C59;
+    text-decoration: none;
+    font-family: 'FuturaLT-Light';
+}
+
+.party-container a:hover{
+    background-color: #EEC616;
+}
+
+.content p {
+    font-size: 17px;
+    align-items: center;
+}
+
+.modal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(254, 126, 126, 0.7);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    height: 100vh;
+}
+
+.content {
+    position: absolute;
+    background: white;
+    max-width: 500px;
+    padding: 1em 2em;
+    border-radius: 4px;
+    max-height: 540px;
+    margin-bottom: 28px;
+}
+
+.contact{
+    max-width: 600px;
+}
+
+.content textarea{
+    margin: 20px 80px;
+    font-family: 'FuturaLT-Light';
+    font-size: 16px;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.box-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #918f8f;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px 8px;
+}
+
+.content h1{
+    text-align: center;
+}
+
+.content input{
+   margin: 20px 80px;
+   padding: 10px 50px 10px 0px;
+   font-family: 'FuturaLT-Light';
+   text-indent: 5px;
+}
+
+.content button{
+    margin: 20px 80px;
+    padding: 10px 20px;
+    color: #3B396C;
+    background-color: #EEC616;
+    font-size: 20px;
+    font-family: 'FuturaLT-Light';
+}
+
+.content .button-register{
+    margin: 20px 68px;
+}
+
+.content button:hover{
+    background-color: #3B396C;
+    color: #EEC616;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-family: 'FuturaLT-Light';
+    font-size: 16px;
+    padding: 0px;
+  }
+
+.register{
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+    justify-content: end;
+}
+
+.register span{
+    font-family: 'FuturaLT-Light';
+}
+
+.content a{
+    font-family: 'FuturaLT-Light';
+    text-decoration: none;
+}
+
+
+.content a:hover{
+    color: red;
+}
+
+#dropdown-products {
+    display: none;
+  }
+  
+.linkitem #dropdown-products {
+display: block;
+list-style: none;
+background: #fff;
+position: absolute;
+top:60px;
+padding: 20px 40px;
+}
+
+#dropdown-products li a{
+    padding-right: 10px;
+}
+
+footer{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social:hover{
+    background-image: linear-gradient(to top left, rgb(255, 106, 0), yellow);
+}
+
+.social i{
+    font-size: 2rem;
+    color: black;
+}
+
+.social:hover i{
+    color: white;
+}
+
+.follow{
+    padding: 15px 20px;
+    font-family: 'FuturaLT-Light';
+    font-size: 20px;
+}
+
+.footer-copyright{
+    padding: 15px 20px;
+    font-family: 'FuturaLT-Light';
+    margin-left: 600px;
+    font-size: 20px;
+}
